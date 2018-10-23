@@ -20,4 +20,10 @@
 
 3.转到“设置>常规设置”，单击“本地化”选项卡，将“默认语言”设置为中文，最后单击“保存更改”按钮。
 
+<h2>投喂</h2>			
+<h4>微信扫一扫投喂</h4>
+<img src="https://blog.fywlnet.cn/images/1539175170786.jpg">
+<h4>支付宝扫一扫投喂</h4>
+<img src="https://blog.fywlnet.cn/images/1539175192974.jpg">
+
 by FYWL -AS113923
