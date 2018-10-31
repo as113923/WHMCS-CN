@@ -284,6 +284,8 @@ $_ADMINLANG['clients']['ccInvalid'] = "您输入的信用卡号码无效";
 $_ADMINLANG['clients']['cvvInvalid'] = "信用卡的 CVV 号码是必填的或无效";
 $_ADMINLANG['clients']['ccExpiryInvalid'] = "您输入的过期日期无效";
 $_ADMINLANG['clients']['remoteGatewayTitle'] = "远程网关信息";
+$_ADMINLANG['clients']['marketingEmailsOptIn'] = "营销电子邮件选择加入";
+$_ADMINLANG['clients']['enableMarketingEmails'] = "发送客户营销电子邮件";
 
 # Client Summary
 $_ADMINLANG['clientsummary']['title'] = "客户配置";
@@ -639,6 +641,43 @@ $_ADMINLANG['domains']['premiumRenewalCost'] = "溢价域名续费成本";
 $_ADMINLANG['domains']['premiumBandsInformation'] = "溢价域名成本价格是从域名注册商的 API 实时获取的。价格标记已在如下定义。标记百分比基于分段，可根据需要进行定义。";
 $_ADMINLANG['domains']['premiumDomains'] = "溢价域名";
 $_ADMINLANG['domains']['lookupProvider'] = "查询提供商";
+$_ADMINLANG['domains']['enableIdProtection'] ="启用ID保护";
+$_ADMINLANG['domains']['enableIdProtectionQuestion'] ="启用ID保护可能会导致注册商收费。<br>您确定要启用ID保护吗？";
+$_ADMINLANG['domains']['disableIdProtection'] ="禁用ID保护";
+$_ADMINLANG['domains']['disableIdProtectionQuestion'] ="禁用ID保护会使注册人详细信息公开。<br>您确定要禁用ID保护吗？";
+
+$_ADMINLANG['domains']['tldNotConfiguredForSale'] ="TLD / Extension未配置出售。";
+$_ADMINLANG['domains']['orderContainsInvalidTlds'] ="此订单包含一个或多个域名注册，其中包含<strong>未配置待售</ strong>的TLD /扩展名，因此已被省略。";
+
+$_ADMINLANG['domains']['bulkManagement'] ="批量管理";
+$_ADMINLANG['domains']['gracePeriod'] ="宽限期";
+$_ADMINLANG['domains']['redemptionPeriod'] ="赎回期";
+$_ADMINLANG['domains']['fee'] ="费用";
+$_ADMINLANG['domains']['duration'] ="持续时间";
+$_ADMINLANG['domains']['bulkYearsDescription'] ="根据1年价格设置2 - 10年";
+$_ADMINLANG['domains']['massUpdateConfirm'] ="您确定要更新所选的扩展程序吗？";
+$_ADMINLANG['domains']['massUpdateError'] ="请选择TLD并填写至少一个字段用于群发行动。";
+
+$_ADMINLANG['domains']['importantReminder'] ="重要提醒";
+$_ADMINLANG['domains']['irtpNotice'] ="您所做的更改将启用此域的IRTP传输锁定。";
+$_ADMINLANG['domains']['optOut'] ="选择退出转让锁（如果有）";
+$_ADMINLANG['domains']['optOutReason'] ="选择退出的原因（可选）";
+$_ADMINLANG['domains']['contactChangePending'] ="联系人更改待定";
+$_ADMINLANG['domains']['verificationRequired'] ="需要验证";
+$_ADMINLANG['domains']['contactsChanged'] ="更改WHOIS信息的请求触发了联系验证过程。已向注册域名所有者发送电子邮件以批准更改。";
+$_ADMINLANG['domains']['contactsChangedDate'] ="更改WHOIS信息的请求触发了联系验证过程。已向注册域名所有者发送电子邮件以批准更改。此操作必须在以下日期之前完成： 。";
+$_ADMINLANG['domains']['newRegistration'] ="已向注册域名所有者发送了一封电子邮件。必须完成验证才能避免暂停。";
+$_ADMINLANG['domains']['newRegistrationDate'] ="已向注册域名所有者发送了一封电子邮件。验证必须在以下时间完成，以避免暂停。";
+$_ADMINLANG['domains']['irtpLockEnabled'] ="启用IRTP传输锁定";
+$_ADMINLANG['domains']['irtpLockDescription'] ="由于联系人更改或新注册，此域名目前已被锁定以进行转移。";
+$_ADMINLANG['domains']['irtpLockDescriptionDate'] ="由于联系人更改或新注册，此域名目前已被锁定以进行转移。这将在以下日期到期。";
+$_ADMINLANG['domains']['resendNotification'] ="重新发送验证电子邮件";
+$_ADMINLANG['domains']['resendNotificationQuestion'] ="你确定要重新发送电子邮件吗？";
+$_ADMINLANG['domains']['resendNotificationSuccess'] ="已重新发送验证邮件。";
+$_ADMINLANG['domains']['modifyPending'] ="需要验证";
+$_ADMINLANG['domains']['changePending'] ="您所请求的更改已触发了联系人验证过程。所有权验证电子邮件已发送至：电子邮件。点击电子邮件中的链接以应用更改。";
+$_ADMINLANG['domains']['changePendingDate'] ="您所请求的更改已触发了联系人验证流程。所有权验证电子邮件已发送至：电子邮件。点击电子邮件中的链接：天数即可应用更改。";
+
 
 # Orders
 $_ADMINLANG['orders']['title'] = "订单管理";
@@ -1206,6 +1245,18 @@ $_ADMINLANG['support']['departmentChange'] = "工单部门已从「:oldDepartmen
 $_ADMINLANG['support']['flagChange'] = "工单管理员标记已从「:oldFlag」更改为「:newFlag」。";
 $_ADMINLANG['support']['priorityChange'] = "工单优先级已从「:oldPriority」更改为「:newPriority」。";
 $_ADMINLANG['support']['subjectChange'] = "工单主题已从「:oldSubject」更改为「:newSubject」。";
+$_ADMINLANG['support']['displayOverview'] ="显示概述：";
+$_ADMINLANG['support']['newTickets'] ="新门票";
+$_ADMINLANG['support']['clientReplies'] ="客户回复";
+$_ADMINLANG['support']['staffReplies'] ="员工回复";
+$_ADMINLANG['support']['withoutReply'] ="没有回复的门票";
+$_ADMINLANG['support']['firstResponse'] ="平均第一反应";
+$_ADMINLANG['support']['submitByHour'] ="按小时提交的门票";
+$_ADMINLANG['support']['ticketsSubmitted'] ="提交的门票数量";
+$_ADMINLANG['support']['hour'] ="小时";
+$_ADMINLANG['support']['numberOfTickets'] ="票数";
+$_ADMINLANG['support']['timeframe'] ="时间范围";
+$_ADMINLANG['support']['averageFirstReplyTime'] ="平均第一回复时间";
 
 # Network Issues
 $_ADMINLANG['networkissues']['title'] = "网络维护";
@@ -1691,6 +1742,7 @@ $_ADMINLANG['permissions']['125'] = "创建预设回复";
 $_ADMINLANG['permissions']['44'] = "管理预设回复";
 $_ADMINLANG['permissions']['126'] = "删除预设回复";
 $_ADMINLANG['permissions']['45'] = "查看报告";
+$_ADMINLANG['permissions']['146'] = "客户数据导出";
 $_ADMINLANG['permissions']['88'] = "CSV 格式下载";
 $_ADMINLANG['permissions']['46'] = "插件模块";
 $_ADMINLANG['permissions']['135'] = "更新 WHMCS";
@@ -1717,6 +1769,7 @@ $_ADMINLANG['permissions']['137'] = "查看模块队列";
 $_ADMINLANG['permissions']['63'] = "配置常规设置";
 $_ADMINLANG['permissions']['133'] = "配置应用链接";
 $_ADMINLANG['permissions']['141'] = "管理市场连接";
+$_ADMINLANG['permissions']['145'] = "查看MarketConnect余额";
 $_ADMINLANG['permissions']['144'] = "管理通知";
 $_ADMINLANG['permissions']['134'] = "配置 OpenID 连接";
 $_ADMINLANG['permissions']['64'] = "配置管理员";
@@ -2258,7 +2311,18 @@ $_ADMINLANG['automation']['sendAutoSuspendEmailInfo'] = "选中复选框，当�
 $_ADMINLANG['automation']['sendAutoUnsuspendEmail'] = "发送解除暂停邮件";
 $_ADMINLANG['automation']['sendAutoUnsuspendEmailInfo'] = "选中复选框，当成功解除暂停时发送解除暂停邮件。";
 $_ADMINLANG['automation']['changeOfDailyCronHourHelpText'] = "您更改了要执行的每日自动 cron 任务的计划时间。请注意，您必须在此时间内在虚拟主机控制面板中至少执行一次 WHMCS System Cron (cron.php)才能成功执行 cron 任务。";
-
+$_ADMINLANG['automation']['dataRetentionSettings'] ="数据保留设置";
+$_ADMINLANG['automation']['dataRetentionNever'] ="从不";
+$_ADMINLANG['automation']['autoDeleteInactiveClients'] ="自动删除非活动客户端";
+$_ADMINLANG['automation']['autoDeleteInactiveClientsAfter'] ="在以下几个月内没有发生任何发票或交易活动";
+$_ADMINLANG['automation']['warning'] ="警告";
+$_ADMINLANG['automation']['warningRemoveCustomerData'] ="这将不可撤销地删除所有客户数据。";
+$_ADMINLANG['automation']['inactiveClientExplanation'] ="非活动客户端被定义为没有活动产品，服务，插件或域的客户端。";
+$_ADMINLANG['automation']['domainSync'] ="域同步设置";
+$_ADMINLANG['automation']['domainExpirySyncFrequency'] ="域过期同步频率";
+$_ADMINLANG['automation']['domainExpirySyncFrequencyInfo'] ="（小时）域到期同步作为cron的一部分运行的频率.0将使用默认值4小时";
+$_ADMINLANG['automation']['domainTransferSyncFrequency'] ="等待传输同步频率";
+$_ADMINLANG['automation']['domainTransferSyncFrequencyInfo'] ="（小时）挂起的传输同步作为cron的一部分运行的频率.0将使用默认值4小时";
 # Payment Gateways
 $_ADMINLANG['gateways']['intro'] = "这是您提供给客户的付款方式/网关接口配置。如果此处未列出您要使用的网关，那么您可以为 WHMCS 建立您自己的模块 - 您可以参考文档@";
 $_ADMINLANG['gateways']['showonorderform'] = "显示在订购表格上";
@@ -2747,8 +2811,8 @@ $_ADMINLANG['general']['autoexisting'] = "仅为现有的用户自动发货";
 $_ADMINLANG['general']['autoexistinginfo'] = "选中复选框，新客户创建订单后等待人工审核（无自动设置/注册）";
 $_ADMINLANG['general']['randomuser'] = "启用随机用户名";
 $_ADMINLANG['general']['randomuserinfo'] = "选中复选框，为服务生成随机用户名，而不是使用域名的前 8 个字母";
-$_ADMINLANG['general']['prorataanniversary'] = "Signup Anniversary Prorata";
-$_ADMINLANG['general']['prorataanniversaryinfo'] = "Prorata products to the clients signup anniversary date if prorata is enabled（例如每个客户的所有项目应为同一日期）";
+$_ADMINLANG['general']['prorataanniversary'] = "注册周年纪念Prorata";
+$_ADMINLANG['general']['prorataanniversaryinfo'] = "如果启用了prorata，Prorata产品将向客户注册周年日（例如每个客户的所有项目应为同一日期）";
 $_ADMINLANG['general']['domainoptions'] = "域名注册选项";
 $_ADMINLANG['general']['domainoptionsreg'] = "允许客户通过您注册域名";
 $_ADMINLANG['general']['domainoptionstran'] = "允许客户转移域名给您";
@@ -2936,6 +3000,9 @@ $_ADMINLANG['general']['captcharecaptcha'] = "reCAPTCHA（<a href=\"http://www.g
 $_ADMINLANG['general']['recaptchaprivatekey'] = "reCAPTCHA 私钥";
 $_ADMINLANG['general']['recaptchapublickey'] = "reCAPTCHA 公钥";
 $_ADMINLANG['general']['recaptchakeyinfo'] = "您需要注册 reCAPTCHA @ <a href=\"https://www.google.com/recaptcha/admin/create\" target=\"_blank\">https://www.google.com/recaptcha/admin/create</a>";
+$_ADMINLANG['general']['autoGeneratedPasswordFormat'] = "自动生成的密码格式";
+$_ADMINLANG['general']['autoGeneratedPasswordFormatAllChars'] = "生成包含字母，数字和特殊字符组合的密码（默认）";
+$_ADMINLANG['general']['autoGeneratedPasswordFormatLegacy'] = "生成仅包含字母和数字组合的密码";
 $_ADMINLANG['general']['reqpassstrength'] = "所需的密码强度";
 $_ADMINLANG['general']['reqpassstrengthinfo'] = "输入所需的密码强度，从 1 到 100 - 输入 0 禁用";
 $_ADMINLANG['general']['failedbantime'] = "管理员无法登录时间";
@@ -2991,6 +3058,9 @@ $_ADMINLANG['general']['errorreportinglevel_debug'] = '错误、警告和通知'
 $_ADMINLANG['general']['errorreportinglevel_warnings'] = '错误和警告';
 $_ADMINLANG['general']['errorreportinglevel_errors'] = '仅错误';
 $_ADMINLANG['general']['errorreportinglevel_inherit'] = '从运行时继承';
+$_ADMINLANG['general']['enablesafeinclude'] = "编码文件加载";
+$_ADMINLANG['general']['enablesafeincludeyes'] = "不要为未知的PHP目标加载用ionCube编码的文件";
+$_ADMINLANG['general']['enablesafeincludeno'] = "尝试加载所有文件";
 $_ADMINLANG['general']['displayerrors'] = "显示错误";
 $_ADMINLANG['general']['displayerrorsinfo'] = "选中复选框，启用显示 PHP 错误（不推荐在生产环境中使用）";
 $_ADMINLANG['general']['logerrors'] = "记录错误";
@@ -3001,6 +3071,12 @@ $_ADMINLANG['general']['hooksdebugmode'] = "调试模式钩子";
 $_ADMINLANG['general']['hooksdebugmodeinfo'] = "选中复选框，启用钩子调用日志记录（仅用于测试）";
 $_ADMINLANG['general']['marketingemailoptout'] = "退订营销邮件";
 $_ADMINLANG['general']['marketingemailoptoutinfo'] = "选中复选框，在客户中心显示退订营销邮件选项";
+$_ADMINLANG['general']['marketingEmails'] = "营销电子邮件";
+$_ADMINLANG['general']['marketingEmailsDescription'] = "勾选以启用营销电子邮件选择加入/退出功能";
+$_ADMINLANG['general']['marketingEmailsRequireOptIn'] = "要求用户选择加入";
+$_ADMINLANG['general']['marketingEmailsRequireOptInEnabled'] = "已启用 - 要求用户选择加入营销电子邮件";
+$_ADMINLANG['general']['marketingEmailsRequireOptInDisabled'] = "已禁用 - 默认为选择加入，并允许用户取消选中该框以选择退出";
+$_ADMINLANG['general']['marketingEmailsOptInMessaging'] = "营销电子邮件选择消息";
 $_ADMINLANG['general']['whitelistedips'] = "IP 地址白名单";
 $_ADMINLANG['general']['whitelistedipsinfo'] = "登录无效免予禁止的 IP 地址";
 $_ADMINLANG['general']['addip'] = "添加 IP 地址";
@@ -3033,6 +3109,10 @@ $_ADMINLANG['general']['creditApply'] = "自动使用余额";
 $_ADMINLANG['general']['creditApplyAutomatic'] = "选中复选框，当创建循环账单时自动从客户的账户余额中使用可用的余额";
 $_ADMINLANG['general']['phoneNumberDropdown'] = "电话号码";
 $_ADMINLANG['general']['phoneNumberDropdownText'] = "选中复选框，启用国际化手机号码输入界面和自动格式化";
+$_ADMINLANG['general']['domainGraceAndRedemptionFees'] = "域名宽限和赎回费用";
+$_ADMINLANG['general']['domainGraceBilling'] = "域名宽限和赎回费用";
+$_ADMINLANG['general']['domainGraceBillingAddToExistingInvoice'] = "将Grace和Redemption Fees添加到现有发票中";
+$_ADMINLANG['general']['domainGraceBillingCreateNewInvoice'] = "将新Grace和Redemption Fees添加到现有发票中...";
 
 # Config Tax
 $_ADMINLANG['taxconfig']['taxrulestitle'] = "征税规则";
@@ -3053,6 +3133,9 @@ $_ADMINLANG['taxconfig']['compoundtax'] = "复合税";
 $_ADMINLANG['taxconfig']['compoundtaxdesc'] = "选中复选框，收取级别 2 的复合税";
 $_ADMINLANG['taxconfig']['deducttaxamount'] = "扣除税额";
 $_ADMINLANG['taxconfig']['deducttaxamountdesc'] = "选中复选框，如果未在征税规则内时，将从已含税的价格中减去税款金额";
+$_ADMINLANG['taxconfig']['taxcalculationstrategy'] = "税收计算方法";
+$_ADMINLANG['taxconfig']['taxperlineitemdesc'] = "每个订单项单独计算";
+$_ADMINLANG['taxconfig']['taxpersubtotaldesc'] = "根据应税订单项的总和计算";
 $_ADMINLANG['taxconfig']['level1rules'] = "级别 1 规则";
 $_ADMINLANG['taxconfig']['level2rules'] = "级别 2 规则";
 $_ADMINLANG['taxconfig']['addnewrule'] = "添加新的征税规则";
@@ -3653,7 +3736,6 @@ $_ADMINLANG['healthCheck']['errorLevelsFailure'] = "您的系统已设置为记�
 $_ADMINLANG['healthCheck']['curlSslSupport'] = "SSL 支持 cURL";
 $_ADMINLANG['healthCheck']['curlSslSupportSuccess'] = "cURL 支持 SSL。";
 $_ADMINLANG['healthCheck']['curlSslSupportFailure'] = "cURL 不支持 SSL。请确认 cURL 已经安装并且支持 SSL，并且在我们的 <a :href>系统需求</a> 中。";
-
 $_ADMINLANG['healthCheck']['curlSecureTlsSupport'] = "cURL 支持安全 TLS";
 $_ADMINLANG['healthCheck']['curlSecureTlsSupportSuccess'] = "cURL 支持安全的 TLS 1.1 和 1.2。";
 $_ADMINLANG['healthCheck']['curlSecureTlsSupportFailure'] = "cURL 不支持安全的 TLS 1.1 和 1.2。请确保已安装的 SSL 运行库支持 TLS 1.1 和 1.2 且支持 cURL。";
@@ -3679,6 +3761,7 @@ $_ADMINLANG['healthCheck']['dbCollationsOk'] = "所有的数据库表和列已�
 $_ADMINLANG['healthCheck']['dbCollationsNotOk'] = "一个或多个数据表或列使用了旧的或不匹配的排序规则。 我们推荐您所有的数据表或列使用统一的 <strong>:collationsText</strong> 排序规则以确保功能正常。了解更多信息请参阅我们的 <a :href>文档</a>。";
 $_ADMINLANG['healthCheck']['updaterTitle'] = "自动更新要求";
 $_ADMINLANG['healthCheck']['updaterFopen'] = "自动更新需要您在 PHP 配置中启用 allow_url_fopen 函数。";
+$_ADMINLANG['healthCheck']['maxExecutionTime'] = "自动更新要求在PHP配置中将max_execution_time设置设置为：required_value秒或更高.";
 $_ADMINLANG['healthCheck']['updaterZip'] = "自动更新需要您安装 PHP Zip 模块或 proc_open 函数可用。";
 $_ADMINLANG['healthCheck']['updaterChmod'] = "自动更新需要您的 PHP 支持 chmod 函数。";
 $_ADMINLANG['healthCheck']['updaterEscapeShellArg'] = "自动更新需要您的 PHP 支持 escapeshellarg 函数。";
@@ -3689,6 +3772,7 @@ $_ADMINLANG['healthCheck']['updaterTempWriteable'] = "自动更新需要一个�
 $_ADMINLANG['healthCheck']['updaterGeneralMemoryLimit'] = "自动更新需要至少分配给 PHP 进程 :memoryLimitRequired 的可用内存。您当前的 PHP memory_limit 设置低于此值，如要更新，请将 PHP 配置中的 memory_limit 增加到 :memoryLimitRequired 或更高的值。";
 $_ADMINLANG['healthCheck']['updaterVersionMemoryLimit'] = "自动更新至 :updateVersion 需要至少分配给 PHP 进程 :memoryLimitRequired 的可用内存。您当前的 PHP memory_limit 设置低于此值，如要更新，请将 PHP 配置中的 memory_limit 增加到 :memoryLimitRequired 或更高的值。";
 $_ADMINLANG['healthCheck']['updaterSuccess'] = "您的环境似乎符合自动更新所需的最低要求。为更新您必须确保您的磁盘空间至少为 250MB。";
+$_ADMINLANG['healthCheck']['updaterIoncubeLoaderMismatch'] = "您的系统有ionCube Loader：loaderVersionInstalled。 请安装ionCube Loader：loaderVersionRequired或更高版本以更新为WHMCS版本：updateVersion。 <a href=\"https://docs.whmcs.com/System_Environment_Guide#IonCube_Version\了解详情</a>";
 
 $_ADMINLANG['appLinks']['description'] = "应用链接允许您授予第三方应用程序访问 WHMCS 的用户账户。";
 $_ADMINLANG['appLinks']['description2'] = "已在下面列出所有支持应用链接的应用，可通过下面的开关简单的启用/禁用。启用应用链接将会在后台队列中创建初始的应用链接。请等待 30 分钟后才可以对所有产品/服务生效。";
@@ -3736,6 +3820,7 @@ $_ADMINLANG['openid']['doResetWarningMsg'] = "这将使所有当前的客户无�
 
 $_ADMINLANG['healthCheck']['sslIsRecommended'] = "这将会阻止一些特性，例如 OpenID 连接等等。这也会影响到您接收 PCI 或其他认证的功能。";
 $_ADMINLANG['healthCheck']['sslNotConfigured'] = ":url 未配置 SSL，这意味着连接未加密，密码可以以明文发送。";
+$_ADMINLANG['healthCheck']['purchaseSsl'] = "在此购买SSL证书.";
 $_ADMINLANG['healthCheck']['caSslNotDetected'] = "检测到您网站 :site 的 SSL 证书未通过证书颁发机构的验证。";
 $_ADMINLANG['healthCheck']['caSslDetectedOk'] = "检测到您网站上的 SSL 证书已通过验证。";
 
@@ -4162,7 +4247,7 @@ $_ADMINLANG['whmimport']['owner'] = "所有者";
 $_ADMINLANG['whmimport']['package'] = "包";
 $_ADMINLANG['whmimport']['created'] = "创建";
 $_ADMINLANG['whmimport']['succeeded'] = "成功";
-$_ADMINLANG['whmimport']['失败'] = "失败";
+$_ADMINLANG['whmimport']['failed'] = "失败";
 $_ADMINLANG['whmimport']['pkgNotFound'] = "（由于WHMCS中找不到包名称）";
 
 $_ADMINLANG['validation']['accepted'] = "必须接受：属性。";
